@@ -947,10 +947,12 @@ nav {
   backdrop-filter: blur(10px);
   width: 100%;
   max-width: 440px;
+  box-sizing: border-box;
 }
 
 .news-text form input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
   outline: none;
@@ -965,9 +967,9 @@ nav {
   background: #ffffff;
   color: #111111;
   border: none;
+  flex-shrink: 0;
   border-radius: 50px;
   padding: 10px 22px;
-
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -1218,10 +1220,11 @@ nav {
     font-size: 1rem !important;
     overflow: hidden;
   }
-  form {
-    overflow: hidden;
+  .news-text form {
+    overflow-y: hidden;
+    padding: 4px 4px 4px 16px;
   }
-  input {
+  .news-text input {
     font-size: 1.1rem;
   }
   .footer-left h3 {
@@ -1304,7 +1307,9 @@ nav {
     .additional-q {
       height: 50vh;
     }
-
+    .main-des {
+      font-weight: 500;
+    }
     .popular-btn {
       position: static;
       margin-top: 1rem;

@@ -213,8 +213,14 @@ nav {
 }
 nav{
   height: 6vw;
+}}
+
+@media (max-width: 572px){
+  nav{
+  height: 9vw;
 }
 }
+
 @media (min-width: 790px) {
   .hamburger {
     display: none;

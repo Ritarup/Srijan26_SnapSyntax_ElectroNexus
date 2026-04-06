@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JaLyatra</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,8 +38,30 @@
         </ul>
         <div>
           <button class="schedule-btn"><a href="#">Schedule Now</a></button>
+          <div class="hamburger" id="hbg" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+          </div>
         </div>
       </nav>
+
+      <div class="sidebar-panel" id="sidebar">
+        <div class="sidebar-nav-spacer"></div>
+        <ul class="sidebar-panel-links">
+          <li><a href="#home" onclick="closeNav()">Home</a></li>
+          <li><a href="#about-us" onclick="closeNav()">About Us</a></li>
+          <li><a href="#gallery" onclick="closeNav()">Gallery</a></li>
+          <li>
+            <a href="#popular-pkg" onclick="closeNav()">Popular Package</a>
+          </li>
+          <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+        <div class="sidebar-panel-footer">
+          <button class="sidebar-schedule-btn" onclick="closeNav()">
+            Schedule Now →
+          </button>
+        </div>
+      </div>
+
       <div class="hero">
         <span class="main-des">A Place Where Nature and Adventure Unite</span>
         <span class="main-light">Unleash the</span
@@ -78,16 +102,16 @@
         </div>
       </div>
     </section>
-    <section id="about-us" idclass="about-us">
+    <section id="about-us" class="about-us">
       <div class="text-header">
         <div class="line"></div>
         <p class="about-us-heading"><i>About Us</i></p>
       </div>
 
-      <p class="text-dark">
+      <p class="text-dark mob-sp-title">
         We specialize in creating tailor-made journeys across India,
       </p>
-      <p class="text-light">
+      <p class="text-light mob-sp-des">
         blending must-see landmarks with hidden gems to give you a true sense of
         this beautiful country.
       </p>
@@ -343,7 +367,6 @@
         </div>
       </section>
 
-      <!-- FOOTER BOTTOM -->
       <div class="footer-bottom">
         <div class="footer-left">
           <h3>Explore India with Us</h3>

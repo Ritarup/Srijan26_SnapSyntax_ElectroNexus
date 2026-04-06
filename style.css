@@ -208,17 +208,18 @@ nav {
     display: flex;
   }
   .logo > p {
-  font-size: 2rem;
-  font-weight: 600;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  nav {
+    height: 6vw;
+  }
 }
-nav{
-  height: 6vw;
-}}
 
-@media (max-width: 572px){
-  nav{
-  height: 9vw;
-}
+@media (max-width: 572px) {
+  nav {
+    height: 9vw;
+  }
 }
 
 @media (min-width: 790px) {
@@ -954,7 +955,6 @@ nav{
   border: none;
   outline: none;
   color: #ffffff;
-  font-size: 0.9rem;
 }
 
 .news-text form input::placeholder {
@@ -982,7 +982,7 @@ nav{
 
 .footer-bottom {
   background: #111111;
-  padding: 48px 40px 36px;
+  padding: 36px 40px 36px;
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 32px 24px;
@@ -990,7 +990,7 @@ nav{
 }
 
 .footer-left h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 12px;
@@ -1051,7 +1051,7 @@ nav{
 .badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   padding: 6px 10px;
@@ -1208,6 +1208,43 @@ nav{
   .faq-right {
     width: 100%;
   }
+  .footer-bottom {
+    padding-top: 28px;
+  }
+  .news-text p {
+    font-size: 2.2rem;
+  }
+  .news-sub {
+    font-size: 1rem !important;
+    overflow: hidden;
+  }
+  form {
+    overflow: hidden;
+  }
+  input {
+    font-size: 1.1rem;
+  }
+  .footer-left h3 {
+    font-size: 2rem;
+  }
+  .footer-left p {
+    font-size: 0.9rem;
+  }
+  .footer-links p,
+  .footer-social p {
+    font-size: 0.9rem;
+  }
+  .footer-links a,
+  .footer-social a {
+    font-size: 1rem !important;
+  }
+  .badge {
+    font-size: 1rem;
+  }
+  .terms,
+  .privacy {
+    font-size: 1rem !important;
+  }
 }
 @media (max-width: 680px) {
   * {
@@ -1272,6 +1309,9 @@ nav{
       position: static;
       margin-top: 1rem;
       margin-left: 2rem;
+    }
+    .footer-left p {
+      font-size: 1.1rem;
     }
   }
 }

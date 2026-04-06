@@ -99,6 +99,7 @@ nav {
 }
 
 .hamburger {
+  margin-top: 0.4rem;
   margin-right: 12px;
   border-radius: 8px;
   width: 40px;
@@ -206,6 +207,10 @@ nav {
   .hamburger {
     display: flex;
   }
+  .logo > p {
+  font-size: 2rem;
+  font-weight: 600;
+}
 }
 @media (min-width: 790px) {
   .hamburger {
